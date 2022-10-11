@@ -1,15 +1,17 @@
 import React, { Component } from "react";
-import FormularioCadastro  from "./components/FormularioCadastro";
-import ListaDenotas from "./components/ListaDeNotas/ListaDeNotas";
-import "./App.css"
-class App extends Component{
-  render(){
+import ListaDeNotas from "./components/ListaDeNotas";
+import FormularioCadastro from "./components/FormularioCadastro";
+import "./assets/App.css";
+import './assets/index.css';
+class App extends Component {
+  render() {
     return (
-      <section>
-        <FormularioCadastro/>
-        <ListaDenotas/>
+      <section className="conteudo">
+        <FormularioCadastro />
+        <ListaDeNotas />
       </section>
     );
   }
 }
+
 export default App;
